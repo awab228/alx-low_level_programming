@@ -9,7 +9,7 @@
  */
 int main(void)
 {
-	int passwordd[100];
+	int password[100];
 	int i, aloc, x;
 
 	aloc = 0;
