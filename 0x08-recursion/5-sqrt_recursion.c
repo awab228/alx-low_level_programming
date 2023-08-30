@@ -13,7 +13,7 @@ int _sqrt_recursion(int n)
 	{
 		return (-1);
 	}
-	return (my_sqrt_recursion(n, 0));
+	return (b_sqrt_recursion(n, 0));
 }
 
 /**
@@ -33,5 +33,5 @@ int b_sqrt_recursion(int n, int i)
 	{
 		return (i);
 	}
-	return (my_sqrt_recursion(n, i + 1));
+	return (b_sqrt_recursion(n, i + 1));
 }
