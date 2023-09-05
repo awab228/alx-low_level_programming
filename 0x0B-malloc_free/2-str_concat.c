@@ -18,8 +18,8 @@ char *str_concat(char *s1, char *s2)
 	while (s2 && s2[len2])
 		len2++;
 
-	str = malloc(sizeof(char) * (len1 + len2 + 1));
-	if (str == NULL)
+	constr = malloc(sizeof(char) * (len1 + len2 + 1));
+	if (constr == NULL)
 		return (NULL);
 
 	x = 0;
@@ -43,7 +43,7 @@ char *str_concat(char *s1, char *s2)
 			y++;
 		}
 	}
-	str[x] = '\0';
+	constr[x] = '\0';
 
-	return (str);
+	return (constr);
 }
