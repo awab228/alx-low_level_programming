@@ -3,7 +3,7 @@
 
 /**
  * *_realloc - reallocates a memory block
- * @pntr: the pointer to the memory previsouly allocated
+ * @ptr: the pointer to the memory previsouly allocated
  * @old_size: the size of the allocated
  * @new_size: the new size of the new memory
  * Return: the pointer to the newly allocated memory
