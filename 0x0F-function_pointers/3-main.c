@@ -4,10 +4,11 @@
 
 /**
   * main - operation requested by the user
-  *
-  * Return: error 98 if if arguments passed 
+  * @argc: ...
+  * @argv: ...
+  * Return: error 98 if if arguments passed
   * are less than 4, error 99 if operator not found
-  * error 100 is divide by 0, or prints the result  
+  * error 100 is divide by 0, or prints the result
   */
 int main(int argc, char *argv[])
 {
