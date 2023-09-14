@@ -34,7 +34,7 @@ int main(int argc, char **argv)
 {
 	if (argc != 2)
 	{
-		fprintf(stderr, "Usage: %s <number of opcodes>\n", argv[0]);
+		fprintf(stderr, "Error");
 		return (1);
 	}
 
@@ -42,7 +42,7 @@ int main(int argc, char **argv)
 
 	if (n < 0)
 	{
-		fprintf(stderr, "Error: Number of opcodes must be non-negative\n");
+		fprintf(stderr, "Error");
 		return (2);
 	}
 
