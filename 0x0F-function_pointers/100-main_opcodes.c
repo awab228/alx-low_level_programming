@@ -34,7 +34,7 @@ int main(int argc, char **argv)
 {
 	if (argc != 2)
 	{
-		fprintf(stderr, "Error");
+		printf("Error\n");
 		return (1);
 	}
 
@@ -42,7 +42,7 @@ int main(int argc, char **argv)
 
 	if (n < 0)
 	{
-		fprintf(stderr, "Error");
+		printf("Error\n");
 		return (2);
 	}
 
