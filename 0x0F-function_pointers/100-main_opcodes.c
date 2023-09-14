@@ -10,17 +10,17 @@
  */
 void print_opcodes(void *func, int n)
 {
-    unsigned char *opcode = (unsigned char *)func;
+	unsigned char *opcode = (unsigned char *)func;
 
-    int i;
+	int i;
 
-    for (i = 0; i < n; i++)
-    {
-        printf("%.2hhx", opcode[i]);
-        if (i < n - 1)
-            printf(" ");
-    }
-    printf("\n");
+	for (i = 0; i < n; i++)
+	{
+		printf("%.2hhx", opcode[i]);
+		if (i < n - 1)
+			printf(" ");
+	}
+	printf("\n");
 }
 
 /**
@@ -28,23 +28,24 @@ void print_opcodes(void *func, int n)
  * @argc: number of arguments passed to the function
  * @argv: array of pointers to arguments
  *
- * Return: always O
+ * Return: always 0
  */
 int main(int argc, char **argv)
 {
-    if (argc != 2)
-    {
-        fprintf(stderr, "Usage: %s <number of opcodes>\n", argv[0]);
-        return 1;
-    }
+	if (argc != 2)
+	{
+		fprintf(stderr, "Usage: %s <number of opcodes>\n", argv[0]);
+		return (1);
+	}
 
-    int n = atoi(argv[1]);
-    if (n < 0)
-    {
-        fprintf(stderr, "Error: Number of opcodes must be non-negative\n");
-        return 2;
-    }
+	int n = atoi(argv[1]);
 
-    print_opcodes((void *)&main, n);
-    return 0;
+	if (n < 0)
+	{
+		fprintf(stderr, "Error: Number of opcodes must be non-negative\n");
+		return (2);
+	}
+
+	print_opcodes((void *)&main, n);
+	return (0);
 }
